@@ -6,6 +6,7 @@ var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8888;
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 console.log('__dirname: ' + __dirname);
+console.log('ip & port: ' + process.env.OPENSHIFT_NODEJS_IP + ':' + process.env.OPENSHIFT_NODEJS_PORT);
 app.use(express.static(__dirname + '/company_show/show1/'));
 app.get('/company_show/show1/index.html', function(req, res) {
     res.sendFile(__dirname + '/company_show/show1/index.html');

@@ -12,6 +12,7 @@ var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8888,
 //var mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL,
 //    mongoURLLabel = "";
 
+console.log('meow!');
 console.log('__dirname: ' + __dirname);
 console.log('ip & port: ' + ip + ':' + port);
 app.use(express.static(__dirname + '/company_show/show1/'));
